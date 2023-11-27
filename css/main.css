@@ -25,6 +25,9 @@ html, body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .container {
@@ -87,6 +90,7 @@ html, body {
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 40px;
     font-size: 16px;
@@ -237,6 +241,7 @@ html, body {
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
+    justify-content: center;
 }
 
 .project {
@@ -334,4 +339,70 @@ html, body {
 
 .copyright p + p {
     margin-top: 0.5em;
+}
+
+@media (max-width: 620px) {
+
+    .header {
+        min-height: unset;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__title strong{
+        font-size: 40px;
+    } 
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .title-1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .projects {
+        justify-content: center;
+    }
+
+    .project_title {
+        font-size: 22px;
+    }
+
+    .project-details__desk {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 40px 0 30px;
+    }
+
+    .footer__wrapper {
+        row-gap: 20px;
+    }
+
+    .social {
+        column-gap: 20px;
+    }
+
+    .social_item {
+        width: 28px;
+    }
+
+    .title-2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .content-list {
+        row-gap: 20px;
+    }
+
+    .content-list__item {
+        font-size: 16px;
+    }
 }
